@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class ReusableIconContent extends StatelessWidget {
   const ReusableIconContent({Key? key, this.icon, this.iconLabel})
@@ -24,10 +25,7 @@ class ReusableIconContent extends StatelessWidget {
         ),
         Text(
           iconLabel!,
-          style: TextStyle(
-            fontSize: 18.0,
-            color: Color(0xFF8D8E98),
-          ),
+          style: kLabelTextStyle,
         ),
       ],
     );
